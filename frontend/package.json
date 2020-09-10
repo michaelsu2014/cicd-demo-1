@@ -12,8 +12,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "deploy-dev": "aws s3 sync ./build/ s3://frontend-20190913042112-hostingbucket-dev --region us-east-1",
-    "cache-bust-dev": "aws cloudfront create-invalidation --distribution-id E1E0630QTROGN7 --paths '/'",
+    "deploy-dev": "aws s3 sync ./build/ frontend-20200910115711-hostingbucket-dev",
+    "cache-bust-dev": "aws cloudfront create-invalidation --distribution-id EUP2LRVZM9O92 --paths '/'",
     "test": "jest",
     "eject": "react-scripts eject"
   },
